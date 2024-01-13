@@ -1,0 +1,25 @@
+version: '3.7'
+
+services:
+  saadhak-app-users:
+    image: ndate1976/saadhak-app-users:latest
+    mem_limit: 700m
+    ports:
+      - "8000:8000"
+    networks:
+      - saadhak-networks    
+    depends_on:
+      - saadhak-discovery-server
+    environment:
+      EUREKA.CLIENT.SERVICEURL.DEFAULTZONE: "http://saadhak-discovery-server:8761/eureka"
+
+  saadhak-discovery-server:
+    image: ndate1976/saadhak-discovery-server:latest
+    mem_limit: 700m
+    ports:
+      - "8761:8761"
+    networks:
+      - saadhak-networks   
+
+networks:
+  saadhak-networks:
