@@ -15,7 +15,7 @@ spring:
     driver-class-name: org.postgresql.Driver
 
     # ----------------- LocalHost DB --------------------
-    url: "jdbc:postgresql://localhost:5432/dev2"
+    url: jdbc:postgresql://192.168.29.244:5432/dev2
     username: postgres
     password: admin
 
