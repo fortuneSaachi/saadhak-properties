@@ -20,9 +20,7 @@ spring:
     password: admin
 
     # ----------------- Dev Environment DB --------------------
-    #url: "jdbc:postgresql://db-postgresql-blr1-11667-saadhak021123-do-user-14663478-0.c.db.ondigitalocean.com:25061/saadhak_connection_pool"
-    #username: doadmin
-    #password: AVNS_xdargsqS_mYxSdQDuw4
+    
 
     hikari:
       minimum-idle: 2
