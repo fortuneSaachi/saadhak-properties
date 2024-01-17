@@ -15,7 +15,7 @@ spring:
     driver-class-name: org.postgresql.Driver
 
     # ----------------- LocalHost DB --------------------
-    url: jdbc:postgresql://192.168.29.244:5432/dev2
+    url: jdbc:postgresql://172.17.0.2:5432/dev2
     username: postgres
     password: admin
 
@@ -36,7 +36,7 @@ eureka:
   #  fetch-registry: false
   #  register-with-eureka: false
     service-url:
-      defaultZone: http://192.168.29.244:8761/eureka/
+      defaultZone: http://172.17.0.2:8761/eureka/
   #server:
   #  wait-time-in-ms-when-sync-empty: 0
 
